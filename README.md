@@ -33,6 +33,13 @@ ipDetails.isValidIp('127.0.0.1') // return true or false
 :star: the repo and share.
 
  [Link to npm package](https://www.npmjs.com/package/ip_details)
+
+### To do
+
+- Location (City, Country)
+- Pincode
+- Lat Long
+- Org
  
 ### License
 
