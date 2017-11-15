@@ -1,6 +1,6 @@
 {
   "name": "ip_details",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Get all (almost) details of a particular IP address",
   "main": "index.js",
   "scripts": {
