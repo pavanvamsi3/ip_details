@@ -34,7 +34,7 @@ ipDetails.isValidIp('127.0.0.1') // return true or false
 
  [Link to npm package](https://www.npmjs.com/package/ip_details)
  
- ### License
+### License
 
 [MIT](https://github.com/pavanvamsi3/ip_details/blob/master/LICENSE) Copyright (c) [pavanvamsi](https://twitter.com/pavanvamsi)
 
