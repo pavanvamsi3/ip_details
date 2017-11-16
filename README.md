@@ -1,7 +1,7 @@
 <p align="center"><img src="https://image.ibb.co/dQ9oCb/mathematica_logo.png" alt="mathematica_logo" border="0"></p>
 <hr></hr>
 
-IP Address Details
+IP Address Details [![Coverage Status](https://coveralls.io/repos/github/pavanvamsi3/ip_details/badge.svg?branch=master)](https://coveralls.io/github/pavanvamsi3/ip_details?branch=master) 
 ========
 Get all (almost) details of a particular IP address
 
