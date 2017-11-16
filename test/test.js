@@ -9,7 +9,7 @@ describe('#ipInfo', function() {
     it('IP Address', function() {
         ipInfo.getIp(function(result) {
             let validIp = ipInfo.isValidIP(result);
-            expect(validIp).to.equal(true)
-        })
+            expect(validIp).to.equal(true);
+        });
     });
 });
