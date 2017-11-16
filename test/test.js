@@ -12,4 +12,16 @@ describe('#ipInfo', function() {
             expect(validIp).to.equal(true);
         });
     });
+
+    it('City', function() {
+        ipInfo.getCity('8.8.8.8', function(result) {
+            expect(result).to.equal('Mountain View, California');
+        });
+    });
+
+    it('City', function() {
+        ipInfo.getCountry('8.8.8.8', function(result) {
+            expect(result).to.equal('United States');
+        });
+    });
 });

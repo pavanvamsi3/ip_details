@@ -1,7 +1,7 @@
 <p align="center"><img src="https://image.ibb.co/dQ9oCb/mathematica_logo.png" alt="mathematica_logo" border="0"></p>
 <hr></hr>
 
-IP Address Details [![Build Status](https://travis-ci.org/pavanvamsi3/ip_details.svg?branch=master)](https://travis-ci.org/pavanvamsi3/ip_details) [![Coverage Status](https://coveralls.io/repos/github/pavanvamsi3/ip_details/badge.svg?branch=master)](https://coveralls.io/github/pavanvamsi3/ip_details?branch=master) 
+IP Address Details [![Build Status](https://travis-ci.org/pavanvamsi3/ip_details.svg?branch=master)](https://travis-ci.org/pavanvamsi3/ip_details) [![Coverage Status](https://coveralls.io/repos/github/pavanvamsi3/ip_details/badge.svg?branch=master)](https://coveralls.io/github/pavanvamsi3/ip_details?branch=master)
 ========
 Get all (almost) details of a particular IP address
 
@@ -12,16 +12,25 @@ Get all (almost) details of a particular IP address
 ### Installation
 
   `npm install ip_details`
-  
+
 ### Usage
 ```javascript
 var ipDetails = require('@pavanvamsi/ip_details');
 
 ipDetails.getIp(function(ipAddress) {
     console.log(ipAddress) // Your IP Address
-}
+});
 
-ipDetails.isValidIp('127.0.0.1') // return true or false
+ipDetails.isValidIp('127.0.0.1'); // return true or false
+
+ipDetails.getCity('8.8.8.8', function(city) {
+    console.log(city); // Mountain View, California
+});
+
+ipDetails.getCountry('8.8.8.8', function(country) {
+    console.log(country); // United States
+});
+
 ```
 
 ### Tests
@@ -40,7 +49,7 @@ ipDetails.isValidIp('127.0.0.1') // return true or false
 - Pincode
 - Lat Long
 - Org
- 
+
 ### License
 
 [MIT](https://github.com/pavanvamsi3/ip_details/blob/master/LICENSE) Copyright (c) [pavanvamsi](https://twitter.com/pavanvamsi)

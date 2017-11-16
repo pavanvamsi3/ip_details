@@ -22,7 +22,32 @@ let isValidIP = (ipAddress) => {
     return false;
 };
 
+let getCity = (ipAddress, callback) => {
+    let url = 'http://ip-api.com/json/' + ipAddress;
+    request(url)
+        .then(function(response) {
+            callback(JSON.parse(response).city
+                + ', ' + JSON.parse(response).regionName);
+        })
+        .catch(function(error) {
+            callback(error);
+        });
+};
+
+let getCountry = (ipAddress, callback) => {
+    let url = 'http://ip-api.com/json/' + ipAddress;
+    request(url)
+        .then(function(response) {
+            callback(JSON.parse(response).country);
+        })
+        .catch(function(error) {
+            callback(error);
+        });
+};
+
 module.exports = {
     getIp: getIp,
-    isValidIP: isValidIP
+    isValidIP: isValidIP,
+    getCity: getCity,
+    getCountry: getCountry
 };
