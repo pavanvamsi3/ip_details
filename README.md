@@ -31,6 +31,10 @@ ipDetails.getCountry('8.8.8.8', function(country) {
     console.log(country); // United States
 });
 
+ipDetails.getCountry('8.88.8', function(country) {
+    console.log(country); // returns undefined because of invalid ip address
+});
+
 ```
 
 ### Tests

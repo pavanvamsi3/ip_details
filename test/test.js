@@ -24,9 +24,15 @@ describe('#ipInfo', function() {
         });
     });
 
-    it('City', function() {
+    it('Country', function() {
         ipInfo.getCountry('8.8.8.8', function(result) {
             expect(result).to.equal('United States');
+        });
+    });
+
+    it('Invalid', function() {
+        ipInfo.getCountry('8.88.8', function(result) {
+            expect(result).to.equal(undefined);
         });
     });
 });
