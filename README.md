@@ -58,6 +58,11 @@ ipDetails.getCountry('8.88.8', function(country) {
 
 [MIT](https://github.com/pavanvamsi3/ip_details/blob/master/LICENSE) Copyright (c) [pavanvamsi](https://twitter.com/pavanvamsi)
 
+### More from the organisation
+
+* [Math Stats](https://github.com/pavanvamsi3/math-stats)
+
 -----------------------------
 Powered by - http://ip-api.com
+
 
